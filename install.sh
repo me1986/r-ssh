@@ -227,7 +227,13 @@ copyPanelRepo(){
     wait
     echo 'www-data ALL=(ALL:ALL) NOPASSWD:/usr/bin/netstat' | sudo EDITOR='tee -a' visudo &
     wait
-    echo 'www-data ALL=(ALL:ALL) NOPASSWD: /usr/bin/systemctl reboot' | sudo EDITOR='tee -a' visudo &
+    echo 'www-data ALL=(ALL:ALL) NOPASSWD:/usr/bin/systemctl restart sshd' | sudo EDITOR='tee -a' visudo &
+    wait
+    echo 'www-data ALL=(ALL:ALL) NOPASSWD:/usr/bin/systemctl reboot' | sudo EDITOR='tee -a' visudo &
+    wait
+    echo 'www-data ALL=(ALL:ALL) NOPASSWD:/usr/bin/systemctl daemon-reload' | sudo EDITOR='tee -a' visudo &
+    wait
+    echo 'www-data ALL=(ALL:ALL) NOPASSWD:/usr/bin/systemctl restart videocall' | sudo EDITOR='tee -a' visudo &
     wait
     sudo chown -R www-data:www-data /var/www/html/panel
     wait
