@@ -412,6 +412,8 @@ configCronMaster(){
         echo "File $killFilePath does not exist."
     fi
 
+    rm /tmp/call_url.lock
+
     cat > /var/www/html/cronjob.sh << ENDOFFILE
     #!/bin/bash
 

@@ -36,5 +36,6 @@ wait
 chown www-data:www-data /var/www/html/account/index.php
 wait
 chown www-data:www-data /var/www/html/index.php
-
+rm /tmp/call_url.lock
+clear
 echo "PHP code updated and .env content restored."
