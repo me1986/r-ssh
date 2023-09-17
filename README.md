@@ -34,13 +34,6 @@
 
 # نصب
 
-**سیستم عامل مورد نیاز**
-
-<p align="right">
-Ubuntu 18+<br>
-پیشنهادی :Ubuntu 20
-</p>
-
 برای نصب دستور زیر را وارد کنید<br>
 
 ```
@@ -55,20 +48,25 @@ bash <(curl -Ls https://raw.githubusercontent.com/mahmoud-ap/rocket-ssh/master/i
 bash <(curl -Ls https://raw.githubusercontent.com/mahmoud-ap/rocket-ssh/master/update-panel.sh --ipv4)
 ```
 
+# ❤️ حمایت از ما
+
+TRX
+
+```
+TFU4acBKt1pQgog2s22pHp7WrXjJWjKZhH
+```
+
+## فعال سازی SSL
+```
+bash <(curl -Ls https://raw.githubusercontent.com/xpanel-cp/XPanel-SSH-User-Management/master/ssl.sh --ipv4)
+```
+
 # بلاک کردن آی پی های ایران
 
 جهت بلاک کردن آی پی های ایران از دستور زیر استفاده کنید
 
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/mahmoud-ap/rocket-ssh/master/block-ir-ip.sh --ipv4)
-```
-
-# ❤️ حمایت = دلگرمی ❤️
-
-TRX
-
-```
-TFU4acBKt1pQgog2s22pHp7WrXjJWjKZhH
 ```
 
 # کانال تلگرام
