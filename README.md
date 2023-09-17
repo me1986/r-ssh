@@ -57,8 +57,9 @@ TFU4acBKt1pQgog2s22pHp7WrXjJWjKZhH
 ```
 
 ## فعال سازی SSL
+
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/xpanel-cp/XPanel-SSH-User-Management/master/ssl.sh --ipv4)
+bash <(curl -Ls https://raw.githubusercontent.com/mahmoud-ap/rocket-ssh/master/ssl.sh --ipv4)
 ```
 
 # بلاک کردن آی پی های ایران
@@ -66,8 +67,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/xpanel-cp/XPanel-SSH-User-Mana
 جهت بلاک کردن آی پی های ایران از دستور زیر استفاده کنید
 
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/mahmoud-ap/rocket-ssh/master/ssl.sh --ipv4)
-
+bash <(curl -Ls https://raw.githubusercontent.com/mahmoud-ap/rocket-ssh/master/block-ir-ip.sh --ipv4)
 ```
 
 # کانال تلگرام
