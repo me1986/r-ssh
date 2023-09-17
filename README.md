@@ -66,7 +66,8 @@ bash <(curl -Ls https://raw.githubusercontent.com/xpanel-cp/XPanel-SSH-User-Mana
 جهت بلاک کردن آی پی های ایران از دستور زیر استفاده کنید
 
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/mahmoud-ap/rocket-ssh/master/block-ir-ip.sh --ipv4)
+bash <(curl -Ls https://raw.githubusercontent.com/mahmoud-ap/rocket-ssh/master/ssl.sh --ipv4)
+
 ```
 
 # کانال تلگرام
