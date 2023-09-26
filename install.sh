@@ -117,7 +117,6 @@ installPackages(){
         sudo add-apt-repository ppa:ondrej/php -y
         apt-get install apache2 zip unzip net-tools curl mariadb-server -y
         apt-get install php php-cli php-mbstring php-dom php-pdo php-mysql -y
-        apt-get install npm -y
         sudo apt-get install coreutils
         apt install php7.4 php7.4-mysql php7.4-xml php7.4-curl cron -y
     fi
