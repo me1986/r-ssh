@@ -259,7 +259,7 @@ configAppache(){
     serverPort=${panelPort##*=}
     ##Remove the "" marks from the variable as they will not be needed
     serverPort=${panelPort//'"'}
-     echo "<VirtualHost *:80>
+     echo "<VirtualHost *:90>
         ServerAdmin webmaster@localhost
         DocumentRoot /var/www/html
 
@@ -290,13 +290,13 @@ configAppache(){
     
     ##Replace 'Virtual Hosts' and 'List' entries with the new port number
     sudo  sed -i.bak 's/.*NameVirtualHost.*/NameVirtualHost *:'$serverPort'/' /etc/apache2/ports.conf
-    echo "Listen 80
+    echo "Listen 90
     Listen $serverPort
     <IfModule ssl_module>
-        Listen 443
+        Listen 943
     </IfModule>
     <IfModule mod_gnutls.c>
-        Listen 443
+        Listen 943
     </IfModule>" > /etc/apache2/ports.conf
     echo '#RocketSSH' > /var/www/rocketsshport
     sudo sed -i -e '$a\'$'\n''rocketsshport '$serverPort /var/www/rocketsshport
@@ -304,13 +304,13 @@ configAppache(){
     
     ##Replace 'Virtual Hosts' and 'List' entries with the new port number
     sudo  sed -i.bak 's/.*NameVirtualHost.*/NameVirtualHost *:'$serverPort'/' /etc/apache2/ports.conf
-    echo "Listen 80
+    echo "Listen 90
     Listen $serverPort
     <IfModule ssl_module>
-        Listen 443
+        Listen 943
     </IfModule>
     <IfModule mod_gnutls.c>
-        Listen 443
+        Listen 943
     </IfModule>" > /etc/apache2/ports.conf
     echo '#RocketSSH' > /var/www/rocketsshport
     sudo sed -i -e '$a\'$'\n''rocketsshport '$serverPort /var/www/rocketsshport
